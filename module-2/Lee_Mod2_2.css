@@ -1,0 +1,37 @@
+Html, body {
+	font-size: 16px;}
+
+P {
+	front-weight: 400;
+	line-height: 1.4em;}
+
+h1 {
+font-weight: 700;
+text-align: center;
+text-transform: capitalize;
+}
+
+h2 {
+	font-weight: 500;
+	text-align: left;
+	padding-top: 15px;}
+a {
+	font-weight: bold;
+	font-size: 1.25em;
+	color: #4F3674;
+	text-decoration: none;} 
+
+a:hover {
+	text-decoration: underline;
+	background-color: #D6A800;}
+
+a:visited {
+	text-transform: capitalize;}
+
+.intro {
+	text-indent: 2em;}
+
+address {
+	text-align: center;}
+
+	

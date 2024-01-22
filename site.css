@@ -1,0 +1,25 @@
+/*  Marissa Lee */
+/* Assignment 3.2 */
+
+#container {
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;}
+
+h1, h2, h3, h4 {
+	background-color: khaki;
+	color: darkslategray;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #D6A800;
+	padding: 10px;}
+
+a {
+	color: olive;
+	text-decoration: none;}
+	
+a:hover {
+	color:olivedrab;}
+
+a:visited {
+	color: seagreen}

@@ -1,0 +1,33 @@
+/* Marissa Lee */
+/* Assignment 4.2 */
+
+#image-gallery {
+	display:grid;
+	margin-top: 10%;
+	grid-template-columns: auto auto auto;}
+
+#image-gallery img {
+	max-width: 300px;
+	max-height: 200px;} /* added this because the picture sizes were strange */
+
+h1 {
+	text-align: center;}
+
+h3 {
+	text-align: center;}
+
+figure {
+	text-align: center;}
+
+figcaption {
+	font-style: italic;
+	font-size: .75em;}
+
+h1, h3, figcaption {
+	color: rgba(0, 0, 255, 0.3);}
+
+a {
+	width: 100%;
+	margin-top: 60%;
+	float: right;
+	margin-bottom: 20px;}

@@ -1,0 +1,50 @@
+<!--Marissa Lee-->
+<!CSD340-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSD 340 Web Development with HTML and CSS</title>
+<h1>Assignment 11.2: JavaScript - Part 3</h1>
+</head>
+<body>
+
+
+<p>To Do List:</p>
+<p>Enter items into the text box to add to the to do list. Use the 'delete last' and 'display' buttons to delete and display items respectively</p>
+<textarea id="textArea" cold="20" rows="4">Enter items for to do list...</textarea>
+
+<button onclick="addText()">Add</button>
+<button onclick="deleteLast()">Delete Last Entry</button>
+<button onclick="display()">Display</button>
+
+
+<!--JS section-->
+	<script>
+	let todoList= [];
+
+	function addText() {
+		const textArea = document.getElementById('textArea');
+		const item = textArea.value;
+		todoList.push(item);
+		alert(`Added "${item}" to the list at position ${todoList.length}.`);
+	}
+
+	function deleteLast() {
+		if (todoList.length > 0) {
+			const removedItem = todoList.pop();}
+		else {
+			alert("The list is empty");
+		}
+	}
+
+	function display() {
+		if(todoList.length > 0) {
+			alert("To do List:\n" + todoList.join("\n"));
+		} else {
+			alert("The list is empty");
+			}
+	}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/* Marissa Lee */
+/* Assignment 3.3 */
+
+h1 {
+	text-align: center;}
+
+#sbsleft {
+	float: left;}
+
+#sbsright {
+	float: left;}
+
+#another {
+	width: 100%;
+	margin-top: 60%;
+	float: right;
+	margin-bottom: 20px;}
+#books {
+	font-weight: 500;
+	border: 1px solid red;
+	border-radius: 15px;
+	width: 45%}
+
+ol, ul {
+	font-weight: 300;
+	width: 45%;} /* giv divs both a width of 45 */
+ol {
+	border: 1px solid red;
+	border-radius: 15px;
+	padding: 10px;}
+
+#learned {
+	border: 1px dashed red;
+	border-radius: 15px;
+	float:left; /* to make the divs side-by-side */
+	padding: 10px;
+	width: 45%}
+#booksList {
+	border: 1px solid red;
+	border-radius: 15px;
+	float:left; /* to make the divs side-by-side */
+	padding: 10px;
+	width: 45%}
+
+#sbsright ul {
+	border: 1px dashed red;
+	border-radius: 15px;
+	padding: 10px;
+	width: 45%}
+
+a:hover {
+	text-decoration: underline;}
+	

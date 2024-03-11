@@ -1,0 +1,75 @@
+<!--Marissa Lee-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link href="Lee_Mod3_3 copy.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<script>
+        var books = [
+            "A Farewell to Arms",
+            "The Old Man and The Sea",
+            "Don Quixote",
+            "The Hollow Man",
+            "Sphere",
+            "1984",
+            "A Brave New World",
+            "Something Happened",
+            "Catch 22",
+            "Jurassic Park"
+        ];
+
+        function displayBooksUp() {
+            const sortedlist = books.sort();
+            displayBooks(sortedlist);
+        }
+
+        function displayBooksDown() {
+            const sortedlist = books.sort().reverse();
+            displayBooks(sortedlist);
+        }
+
+        function displayBooks(sortedlist) {
+            const list = document.getElementById("booksList");
+            list.innerHTML = ""; // Clear existing list
+            sortedlist.forEach(book => {
+                const item = document.createElement("li");
+                item.textContent = book;
+                list.appendChild(item);
+            });
+        }
+    </script>
+
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+    </div>
+    <div id="sbsleft">
+        <h3 id="books">Top 10 Favorite Books</h3>
+	<ol id="booksList"></ol>
+
+    </div>
+    <div id="sbsright">
+        	<h3 id="learned">5 Things I've Learned Since the Course Started</h3>
+        		<ul>
+            		<li>Peripheral vision helps you see in the dark</li>
+           		<li>HTML is fun</li>
+            		<li>HTML is tedious</li>
+           		<li>It is very important to read the textbooks and take notes</li>
+          		<li>What dpi and ppi mean</li>
+      			</ul>
+    </div>
+    <div id="another">
+        <a href="https://mkell6.github.io/csd-340/">Landing Page</a>
+    </div>
+
+    <button onclick="displayBooksUp()">Ascending Order</button>
+    <button onclick="displayBooksDown()">Descending Order</button>
+
+   
+
+    
+</body>
+</html>
